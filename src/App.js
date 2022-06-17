@@ -75,7 +75,7 @@ function App() {
           </h1>
         </div>
         <div style={{ display: "flex", paddingLeft: "5%", paddingRight: "5%" }}>
-          <div style={{ width: "40%" }}>
+          <div style={{ width: "40%",margin:'auto'}}>
             <img
               src="img/logo.png"
               alt=""
@@ -209,10 +209,11 @@ function App() {
             <div style={{ width: "45%" }}>
               <img src="img/docter.jpg" alt="" width={"100%"}></img>
             </div>
-            <div style={{ width: "45%", textAlign: "center" }}>
+            <div style={{ width: "45%", textAlign: "center" ,margin:'auto'}}>
               <h3 style={{ margin: "0" }}>タイトル</h3>
               <p>文章</p>
               <p style={{ left: "100%" }}>院長/○○ ○○</p>
+            
             </div>
           </div>
         </div>
@@ -447,15 +448,14 @@ function App() {
           style={{
             paddingLeft: "5%",
             paddingRight: "5%",
-            display: "flex",
             paddingTop: "5%",
-            paddingBottom: "10%",
+            paddingBottom: "5%",
           }}
         >
-          <div style={{ width: "50%", margin: "auto" }}>
-            <img src="img/logo.png" alt="" width={"100%"}></img>
+          <div style={{ width: "100%", margin: "auto",textAlign:'center' }}>
+            <img src="img/logo.png" alt="" width={"50%"}></img>
           </div>
-          <div style={{ width: "50%", textAlign: "center" }}>
+          <div style={{ width: "100%", textAlign: "center" }}>
             <h4 style={{ margin: "0" }}>○○歯科クリニック</h4>
             <h4 style={{ margin: "0" }}>TEL:0000-00-0000</h4>
             <h4 style={{ margin: "0" }}>東京都○○区○○00-0</h4>
@@ -508,6 +508,7 @@ function App() {
               margin: "0",
               color: "white",
               fontSize: "1vw",
+              paddingBottom:'2%'
             }}
           >
             ©2022 ○○歯科クリニック
