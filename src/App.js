@@ -124,7 +124,7 @@ function App() {
           </div>
         </div>
         <div style={{ textAlign: "center", width: "100%", paddingTop: "2%" }}>
-          <Stack direction="row" spacing={2} style={{ textAlign: "center" }}>
+          <Stack direction="row" spacing={2} style={{ textAlign: "center", justifyContent:'center'}}>
             <Button variant="outlined">ネットでのご予約はこちらから</Button>
           </Stack>
         </div>
