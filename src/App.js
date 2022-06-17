@@ -147,21 +147,21 @@ function App() {
           <img src="img/teeth.png" alt="" width={"50"}></img>
           <h2 style={{ margin: "0" }}>診療科目</h2>
           <div style={{ display: "flex", justifyContent: "center" }}>
-            <div style={{ paddingLeft: "5%", paddingRight: "5%" }}>
+            <div style={{width:"33.33%"}}>
               <img src="img/teeth.png" alt="" width={"30"}></img>
               <p sytle={{ margin: "0" }}>一般歯科</p>
               <Button variant="contained" size="small">
                 詳細
               </Button>
             </div>
-            <div style={{ paddingLeft: "5%", paddingRight: "5%" }}>
+            <div style={{width:"33.33%"}}>
               <img src="img/teeth.png" alt="" width={"30"}></img>
               <p sytle={{ margin: "0" }}>矯正歯科</p>
               <Button variant="contained" size="small">
                 詳細
               </Button>
             </div>
-            <div style={{ paddingLeft: "5%", paddingRight: "5%" }}>
+            <div style={{ width:"33.33%" }}>
               <img src="img/teeth.png" alt="" width={"30"}></img>
               <p sytle={{ margin: "0" }}>診療内科</p>
               <Button variant="contained" size="small">
@@ -172,21 +172,21 @@ function App() {
         </div>
         <div style={{ textAlign: "center", paddingTop: "5%" }}>
           <div style={{ display: "flex", justifyContent: "center" }}>
-            <div style={{ paddingLeft: "5%", paddingRight: "5%" }}>
+            <div style={{ width:"33.33%" }}>
               <img src="img/teeth.png" alt="" width={"30"}></img>
               <p sytle={{ margin: "0" }}>診療科目</p>
               <Button variant="contained" size="small">
                 詳細
               </Button>
             </div>
-            <div style={{ paddingLeft: "5%", paddingRight: "5%" }}>
+            <div style={{ width:"33.33%" }}>
               <img src="img/teeth.png" alt="" width={"30"}></img>
               <p sytle={{ margin: "0" }}>診療科目</p>
               <Button variant="contained" size="small">
                 詳細
               </Button>
             </div>
-            <div style={{ paddingLeft: "5%", paddingRight: "5%" }}>
+            <div style={{ width:"33.33%" }}>
               <img src="img/teeth.png" alt="" width={"30"}></img>
               <p sytle={{ margin: "0" }}>診療科目</p>
               <Button variant="contained" size="small">
@@ -217,7 +217,7 @@ function App() {
           </div>
         </div>
         <div style={{ paddingLeft: "5%", paddingRight: "5%" }}>
-          <h3 style={{ margin: "0" }}>経歴</h3>
+          <h4 style={{ margin: "0" }}>経歴</h4>
           <hr></hr>
           <div
             style={{
@@ -227,7 +227,7 @@ function App() {
             }}
           >
             <div style={{ width: "33.333%" }}>
-              <h4 style={{ margin: "0" }}>平成××年</h4>
+              <h5 style={{ margin: "0" }}>平成××年</h5>
               <hr></hr>
               <div style={{ fontSize: "1vw", margin: "0" }}>
                 <p>○○大学歯学部卒業</p>
@@ -235,14 +235,14 @@ function App() {
               </div>
             </div>
             <div style={{ width: "33.333%" }}>
-              <h4 style={{ margin: "0" }}>平成××年</h4>
+              <h5 style={{ margin: "0" }}>平成××年</h5>
               <hr></hr>
               <div style={{ fontSize: "1vw", margin: "0" }}>
                 <p>医療法人○○医院 勤務</p>
               </div>
             </div>
             <div style={{ width: "33.333%" }}>
-              <h4 style={{ margin: "0" }}>平成××年</h4>
+              <h5 style={{ margin: "0" }}>平成××年</h5>
               <hr></hr>
               <div style={{ fontSize: "1vw", margin: "0" }}>
                 <p>○○クリニック 勤務</p>
@@ -252,7 +252,7 @@ function App() {
 
           <div style={{ display: "flex" }}>
             <div style={{ width: "50%" }}>
-              <h3 style={{ margin: "0" }}>資格</h3>
+              <h4 style={{ margin: "0" }}>資格</h4>
               <hr></hr>
               <div style={{ fontSize: "1vw", margin: "0" }}>
                 <ul sytle={{ margin: "0", paddingInline: "0" }}>
@@ -263,7 +263,7 @@ function App() {
               </div>
             </div>
             <div style={{ width: "50%" }}>
-              <h3 style={{ margin: "0" }}>所属</h3>
+              <h4 style={{ margin: "0" }}>所属</h4>
               <hr></hr>
               <div style={{ fontSize: "1vw", margin: "0" }}>
                 <ul sytle={{ margin: "0", paddingInline: "0" }}>
@@ -402,9 +402,9 @@ function App() {
           >
             <div style={{ display: "flex", justifyContent: "center" }}>
               <TrainIcon fontSize="large"></TrainIcon>
-              <h4 style={{ marginTop: "auto", marginBottom: "auto" }}>
+              <h5 style={{ marginTop: "auto", marginBottom: "auto" }}>
                 電車でお越しの方は
-              </h4>
+              </h5>
             </div>
             <p style={{ margin: "0" }}>××××線 ○○駅下車 徒歩７分</p>
             <p style={{ margin: "0" }}>××××線 ○○駅下車 徒歩７分</p>
@@ -417,9 +417,9 @@ function App() {
               }}
             >
               <DirectionsBusIcon fontSize="large"></DirectionsBusIcon>
-              <h4 style={{ marginTop: "auto", marginBottom: "auto" }}>
+              <h5 style={{ marginTop: "auto", marginBottom: "auto" }}>
                 バスでお越しの方は
-              </h4>
+              </h5>
             </div>
             <p style={{ margin: "0" }}>
               ×××××駅東口発 都営バス ×××××駅行き ×××××停留所下車
@@ -433,9 +433,9 @@ function App() {
               }}
             >
               <DirectionsCarIcon fontSize="large"></DirectionsCarIcon>
-              <h4 style={{ marginTop: "auto", marginBottom: "auto" }}>
+              <h5 style={{ marginTop: "auto", marginBottom: "auto" }}>
                 車でお越しの方は
-              </h4>
+              </h5>
             </div>
             <p style={{ margin: "0" }}>
               駐車場3台完備、もしくは近隣コインパーキング割引券あり
