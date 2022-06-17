@@ -31,10 +31,18 @@ function App() {
               justifyContent: "center",
             }}
           >
-            <p style={{ paddingLeft: "2%" }}>お知らせ</p>
-            <p style={{ paddingLeft: "2%" }}>診療科目</p>
-            <p style={{ paddingLeft: "2%" }}>ご挨拶</p>
+          <div style={{width:'33.333%'}}>
+            <p>お知らせ</p>
           </div>
+          <div style={{width:'33.333%'}}>
+            <p>
+              診療科目
+            </p>
+          </div>
+          <div style={{width:'33.33%'}}>
+            <p>院長あいさつ</p>
+          </div>
+        </div>
         </div>
         <div>
           <div
@@ -44,9 +52,18 @@ function App() {
               justifyContent: "center",
             }}
           >
-            <p style={{ paddingLeft: "2%" }}>当院の特徴</p>
-            <p style={{ paddingLeft: "2%" }}>リンク</p>
-            <p style={{ paddingLeft: "2%" }}>アクセス</p>
+          <div style={{width:'33.333%'}}>
+            <p>当院の特徴
+            </p>
+          </div>
+          <div style={{width:'33.333%'}}>
+            <p>
+            院内ブログ
+            </p>
+          </div>
+          <div style={{width:'33.33%'}}>
+            <p>アクセス</p>
+          </div>
           </div>
         </div>
         <div>
