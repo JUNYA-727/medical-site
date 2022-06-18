@@ -13,6 +13,7 @@ import NavigateNextIcon from "@mui/icons-material/NavigateNext";
 import TrainIcon from "@mui/icons-material/Train";
 import DirectionsBusIcon from "@mui/icons-material/DirectionsBus";
 import DirectionsCarIcon from "@mui/icons-material/DirectionsCar";
+import {Link as Scroll} from 'react-scroll'
 function App() {
   return (
     <>
@@ -23,49 +24,63 @@ function App() {
             東京都○○区のsample歯科クリニックでは、歯の健康を第一に考えた治療を行っています
           </p>
         </div>
-        <div>
-          <div
-            style={{
-              display: "flex",
-              textAlign: "center",
-              justifyContent: "center",
-            }}
-          >
-          <div style={{width:'33.333%'}}>
-            <p>お知らせ</p>
+        <div style={{borderRadius:"20%",backgroundColor:'lightyellow'}}>
+    
+            <div
+              style={{
+                display: "flex",
+                textAlign: "center",
+                justifyContent: "center",
+              }}
+            >
+              <div style={{width:'33.333%'}}>
+              <Scroll to='news' smooth='true'>
+                <p>
+                  お知らせ
+                  </p>
+                </Scroll>
+              </div>
+              <div style={{width:'33.333%'}}>
+                <Scroll to='subject' smooth='true'>
+                <p>
+                  診療科目
+                </p>
+                </Scroll>
+              </div>
+              <div style={{width:'33.33%'}}>
+                <Scroll to='hello' smooth='true'>
+                <p>院長あいさつ</p>
+                </Scroll>
+              </div>
           </div>
-          <div style={{width:'33.333%'}}>
-            <p>
-              診療科目
-            </p>
-          </div>
-          <div style={{width:'33.33%'}}>
-            <p>院長あいさつ</p>
+            <div
+              style={{
+                display: "flex",
+                textAlign: "center",
+                justifyContent: "center",
+              }}
+            >
+              <div style={{width:'33.333%'}}>
+                <Scroll to='features' smooth="true">
+                <p>当院の特徴
+                </p>
+                </Scroll>
+              </div>
+              <div style={{width:'33.333%'}}>
+                <Scroll to='blog' smooth='true'>
+                <p>
+                院内ブログ
+                </p>
+                </Scroll>
+              </div>
+              <div style={{width:'33.33%'}}>
+                <Scroll to='access' smooth='true'>
+                <p>アクセス</p>
+                </Scroll>
+              </div>
           </div>
         </div>
-        </div>
-        <div>
-          <div
-            style={{
-              display: "flex",
-              textAlign: "center",
-              justifyContent: "center",
-            }}
-          >
-          <div style={{width:'33.333%'}}>
-            <p>当院の特徴
-            </p>
-          </div>
-          <div style={{width:'33.333%'}}>
-            <p>
-            院内ブログ
-            </p>
-          </div>
-          <div style={{width:'33.33%'}}>
-            <p>アクセス</p>
-          </div>
-          </div>
-        </div>
+      
         <div>
           <img src="img/main-img.jpg" width={"100%"} alt=""></img>
         </div>
@@ -128,7 +143,7 @@ function App() {
             <Button variant="outlined">ネットでのご予約はこちらから</Button>
           </Stack>
         </div>
-        <div style={{ textAlign: "center", paddingTop: "5%" }}>
+        <div id='news' style={{ textAlign: "center", paddingTop: "10%" }}>
           <img src="img/teeth.png" alt="" width={"50"}></img>
           <h2 style={{ fontSize: "5vw", margin: "0" }}>お知らせ</h2>
           <div
@@ -143,10 +158,11 @@ function App() {
           </div>
         </div>
 
-        <div style={{ textAlign: "center", paddingTop: "5%" }}>
-          <img src="img/teeth.png" alt="" width={"50"}></img>
-          <h2 style={{ margin: "0" }}>診療科目</h2>
-          <div style={{ display: "flex", justifyContent: "center" }}>
+        <div id='subject' style={{ textAlign: "center", paddingTop: "20%"}}>
+          <img src="img/teeth.png" alt="" width={"50"} style={{paddingBottom:'2%'}}></img>
+          <div style={{border:'solid 3px lightsteelblue',boxShadow:'10px 5px 5px steelblue',paddingTop:'1%',paddingBottom:'3%',marginLeft:'2%',marginRight:'2%'}}>
+          <h2 style={{ margin: "0"}}>診療科目</h2>
+          <div style={{ display: "flex", justifyContent: "center",paddingTop:'5%'}}>
             <div style={{width:"33.33%"}}>
               <img src="img/teeth.png" alt="" width={"30"}></img>
               <p sytle={{ margin: "0" }}>一般歯科</p>
@@ -169,9 +185,7 @@ function App() {
               </Button>
             </div>
           </div>
-        </div>
-        <div style={{ textAlign: "center", paddingTop: "5%" }}>
-          <div style={{ display: "flex", justifyContent: "center" }}>
+          <div style={{ display: "flex", justifyContent: "center",paddingTop:'3%' }}>
             <div style={{ width:"33.33%" }}>
               <img src="img/teeth.png" alt="" width={"30"}></img>
               <p sytle={{ margin: "0" }}>診療科目</p>
@@ -194,8 +208,9 @@ function App() {
               </Button>
             </div>
           </div>
+          </div>
         </div>
-        <div style={{ textAlign: "center", paddingTop: "15%" }}>
+        <div id='hello' style={{ textAlign: "center", paddingTop: "20%" }}>
           <img src="img/teeth.png" alt="" width={"50"}></img>
           <h2 style={{ margin: "0" }}>院長ごあいさつ</h2>
           <div
@@ -217,7 +232,7 @@ function App() {
             </div>
           </div>
         </div>
-        <div style={{ paddingLeft: "5%", paddingRight: "5%" }}>
+        <div style={{ paddingLeft: "5%", paddingRight: "5%",paddingTop:'5%' }}>
           <h4 style={{ margin: "0" }}>経歴</h4>
           <hr></hr>
           <div
@@ -274,7 +289,7 @@ function App() {
             </div>
           </div>
         </div>
-        <div style={{ textAlign: "center", paddingTop: "5%" }}>
+        <div style={{ textAlign: "center", paddingTop: "20%" }} id='features'>
           <img src="img/teeth.png" alt="" width={"50"}></img>
           <h2 style={{ margin: "0px" }}>当院の特徴</h2>
           <div
@@ -283,6 +298,7 @@ function App() {
               paddingRight: "5%",
               paddingLeft: "5%",
               justifyContent: "center",
+              paddingTop:'5%'
             }}
           >
             <div style={{ width: "50%" }}>
@@ -294,7 +310,7 @@ function App() {
             </div>
           </div>
         </div>
-        <div style={{ textAlign: "center", paddingTop: "10%" }}>
+        <div style={{ textAlign: "center", paddingTop: "2%" }}>
           <div
             style={{
               display: "flex",
@@ -320,7 +336,7 @@ function App() {
             </div>
           </div>
         </div>
-        <div style={{ textAlign: "center", paddingTop: "5%" }}>
+        <div style={{ textAlign: "center", paddingTop: "20%" }} id='blog'>
           <img src="img/teeth.png" alt="" width={"50"}></img>
           <h2 style={{ margin: "0" }}>院内ブログ</h2>
           <div
@@ -371,10 +387,11 @@ function App() {
         <div
           style={{
             textAlign: "center",
-            paddingTop: "10%",
+            paddingTop: "20%",
             paddingRight: "5%",
             paddingLeft: "5%",
           }}
+          id='access'
         >
           <img src="img/teeth.png" alt="" width={"50"}></img>
           <h2 style={{ margin: "0" }}>アクセス</h2>
@@ -447,7 +464,7 @@ function App() {
         <div
           style={{
             paddingLeft: "5%",
-            paddingRight: "5%",
+            pafdingRight: "5%",
             paddingTop: "5%",
             paddingBottom: "5%",
           }}
