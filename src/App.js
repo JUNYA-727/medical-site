@@ -489,14 +489,22 @@ function App() {
               color: "white",
             }}
           >
-            <div style={{ width: "33.33% " }}>
-              <p>お知らせ</p>
+            <div style={{ width: "33.33% " }}>            
+              <Scroll to='news' smooth='true'>
+                <p>
+                  お知らせ
+                  </p>
+                </Scroll>
             </div>
             <div style={{ width: "33.33%" }}>
+              <Scroll to='subject' smooth='true'>
               <p>診療科目</p>
+              </Scroll>
             </div>
             <div style={{ width: "33.33%" }}>
+              <Scroll to='hello' smooth="true">
               <p>院長ご挨拶</p>
+              </Scroll>
             </div>
           </div>
           <div
@@ -510,13 +518,19 @@ function App() {
             }}
           >
             <div style={{ width: "33.33%" }}>
+              <Scroll to='features' smooth='true'>
               <p>当院の特徴</p>
+              </Scroll>
             </div>
             <div style={{ width: "33.33%" }}>
+              <Scroll to='blog' smooth='true'>
               <p>院内ブログ</p>
+              </Scroll>
             </div>
             <div style={{ width: "33.33%" }}>
+              <Scroll to='access' smooth='true'>
               <p>アクセス</p>
+              </Scroll>
             </div>
           </div>
           <p
